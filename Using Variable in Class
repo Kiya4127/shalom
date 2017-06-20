@@ -1,0 +1,60 @@
+/* c program Progress */
+
+#include <iostream>
+#include <string> // string is anothe name of text.
+// on this program what I am goin to do is one to change the name and give the name.
+using namespace std;
+
+
+class DilnesaClass{
+        public: // is access modifier. and also called variable.
+        void setName(string x){    // this line is settle function.
+        name = x;
+
+        }
+         string getName(){
+         return name;
+         }
+        private:
+         string name;
+};
+int main()
+{
+    DilnesaClass bo;
+    bo.setName("sir don't do it");
+    cout << bo.getName();
+    return 0;
+}
+// Varibale and constant //
+
+#include <stdio.h>
+#include <stdlib.h>
+
+#define GRAMS_PER_POUNDS 454
+const int NEXT_PER_CENTURY = 2000;
+long weight_in_grams, weight_in_pounds;
+int year_of_birth, age_in_2000;
+
+int main ()
+
+{
+
+        printf(" Enter your wight in pounds: ");
+        scanf("%d", &weight_in_pounds);
+        printf("Enter your year of birth: ");
+        scanf("%d", &year_of_birth);
+
+
+        weight_in_grams = weight_in_pounds * GRAMS_PER_POUND;
+        age_in_2000 = NEXT_CENTURY - year_of_birth;
+
+
+        printf("\nYour weight in grams = %1d", weight_in_grams);
+        printf("\nIn 2000 you will be %d years old\n", age_in_2000);
+
+        return 0;
+
+
+
+
+}
