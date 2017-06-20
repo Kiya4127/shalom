@@ -1,0 +1,65 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    printf("\nA char  is %d bytes", sizeof (char));
+    printf("\nAn int is %d bytes", sizeof ( int));
+    printf("\nAn long is %d bytes", sizeof (long));
+    printf("\nAn unsigned char is %d bytes", sizeof (unsigned char));
+    printf ("\nAn singned char is %d bytes", sizeof (signed char));
+    return 0;
+}
+/*Statements, Expression and Operatos */
+
+#include <stdio.h>
+#include <stdlib.h>
+/* Demonstrates unary operator prefix and postfix modes*/
+int a, b;
+
+int main()
+{
+
+a = b = 5;
+   printf("\n%d  %d", a--, --b);
+   printf("\n%d  %d", a--, --b);
+   printf("\n%d  %d", a--, --b);
+   return 0;
+}
+/*The Constructor */
+
+#include <iostream>
+using namespace std;
+// this progamming is about constractor.
+// constrcator doesn't have void name
+class DilnesaClass (
+        public:
+        DilnesaClass(){
+        cout <<" this will be fine" << endl;
+        }
+        void setName(string x){
+        name = x;
+
+
+        }
+        string getName(){
+        return name;
+
+        }
+        private:
+        string name;
+
+
+);
+
+int main ()
+
+{
+
+DilnesaClass bo;
+
+return 0;
+
+
+}
+
